@@ -108,9 +108,31 @@ student5 = {
         "zip_code": "140105"
     }
 }
+student6 = {
+    "id": 6,
+    "name": "Rustam",
+    "age": 19,
+    "gender": "male",
+    "contact": "99-333-33-33",
+    "grade_level": "Grade 12",
+    "subjects": {
+        "math": 76,
+        "science": 84,
+        "english": 80
+    },
+    "attendance": 89.5,
+    "activities": ["Football Team", "Math Club"],
+    "address": {
+        "street": "32 Shohrux",
+        "city": "Andijon",
+        "state": "Qizil",
+        "zip_code": "170200"
+    }
+}
 
 students_table = db.table('students')
 students_table.insert_multiple([student1,student2])
 students_table.insert(student3)
 students_table.insert(student4)
 students_table.insert(student5)
+students_table.insert(student6)
