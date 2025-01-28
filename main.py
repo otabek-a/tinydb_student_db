@@ -129,6 +129,28 @@ student6 = {
         "zip_code": "170200"
     }
 }
+student7 = {
+    "id": 7,
+    "name": "Madina",
+    "age": 18,
+    "gender": "female",
+    "contact": "99-444-44-44",
+    "grade_level": "Grade 11",
+    "subjects": {
+        "math": 92,
+        "science": 90,
+        "english": 88
+    },
+    "attendance": 96.0,
+    "activities": ["Reading Club", "HISTORY Club"],
+    "address": {
+        "street": "45 Islom Karimov",
+        "city": "Buxoro",
+        "state": "Oq",
+        "zip_code": "200300"
+    }
+}
+
 
 students_table = db.table('students')
 students_table.insert_multiple([student1,student2])
@@ -136,3 +158,4 @@ students_table.insert(student3)
 students_table.insert(student4)
 students_table.insert(student5)
 students_table.insert(student6)
+students_table.insert(student7)
