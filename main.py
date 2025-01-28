@@ -24,7 +24,28 @@ student1={
     }
 }
 
+student2={
+    "id": 100,
+    "name": "otabek",
+    "age": 18,
+    "gender": "male",
+    "contact": "99-192-82-13",
+    "grade_level": "Graded school",
+    "subjects": {
+        "math": 90,
+        "science": 100,
+        "english": 77
+    },
+    "attendance": 92.5,
+    "activities": ["IT", "HISTORY Club"],
+    "address": {
+        "street": "45 chilquduq",
+        "city": "zoom",
+        "state": "Up",
+        "zip_code": "P571"
+    }
+}
 
 
 students_table = db.table('students')
-students_table.insert(student1)
+students_table.insert_multiple([student1,student2])
