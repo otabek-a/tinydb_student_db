@@ -150,6 +150,48 @@ student7 = {
         "zip_code": "200300"
     }
 }
+student8 = {
+    "id": 8,
+    "name": "Azizbek",
+    "age": 20,
+    "gender": "male",
+    "contact": "99-555-55-55",
+    "grade_level": "Grade 12",
+    "subjects": {
+        "math": 87,
+        "science": 93,
+        "english": 86
+    },
+    "attendance": 92.0,
+    "activities": ["IT Club", "Robotics"],
+    "address": {
+        "street": "67 Mustaqillik",
+        "city": "Qarshi",
+        "state": "Ko'k",
+        "zip_code": "180200"
+    }
+}
+student9 = {
+    "id": 9,
+    "name": "Dilnoza",
+    "age": 17,
+    "gender": "female",
+    "contact": "99-666-66-66",
+    "grade_level": "Grade 10",
+    "subjects": {
+        "math": 84,
+        "science": 88,
+        "english": 89
+    },
+    "attendance": 93.5,
+    "activities": ["Art Club", "Dance Club"],
+    "address": {
+        "street": "90 Yangiobod",
+        "city": "Farg'ona",
+        "state": "Yashil",
+        "zip_code": "150400"
+    }
+}
 
 
 students_table = db.table('students')
@@ -159,3 +201,5 @@ students_table.insert(student4)
 students_table.insert(student5)
 students_table.insert(student6)
 students_table.insert(student7)
+students_table.insert(student8)
+students_table.insert(student9)
